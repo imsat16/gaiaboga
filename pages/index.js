@@ -8,7 +8,7 @@ import Footer from '../components/Footer';
 
 export default function Home () {
   return (
-    <div className="overflow-x-hidden">
+    <div className="">
       <Navbar />
       <HomeCover />
       <div className=" p-8 grid lg:grid-cols-3 gap-8 items-center">
@@ -35,14 +35,14 @@ export default function Home () {
         </div>
       </div>
       {/*  */}
-      <div className=" bg-yellow-800 md:w-screen md:h-screen flex flex-col justify-center items-center md:px-32 p-32">
+      <div className=" bg-yellow-800 md:w-full md:h-screen flex flex-col justify-center items-center md:px-32 p-16">
         <div className="bg-white grid md:grid-cols-2 items-center">
           <div className="flex flex-col justify-center items-center ">
             <Image className=" " alt="bgproduct" src={BgProduct} />
           </div>
-          <div className="p-16">
+          <div className="md:p-16">
             <div className="grid grid-rows-1 gap-3">
-              <h1 className=" text-4xl font-semibold">PRODUK KAMI</h1>
+              <h1 className=" md:text-4xl text-xl font-semibold">PRODUK KAMI</h1>
               <p className="text-lg">
                 Gaiaboga saat ini memiliki 3 kategori produk yang sudah ditawarkan ke seluruh masyarakat
               </p>
@@ -57,8 +57,8 @@ export default function Home () {
                   Sobaso
                 </li>
               </ul>
-              <button className='uppercase bg-yellow-800 p-2 rounded-md'>
-lihat Produk
+              <button className="uppercase bg-yellow-800 p-2 rounded-md">
+                lihat Produk
               </button>
             </div>
           </div>
