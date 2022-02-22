@@ -6,7 +6,7 @@ import {PrimaryLogo} from './imageComp';
 function Navbar () {
   return (
     <div className="bg-white uppercase fixed text-defaultColor font-medium shadow border-1 w-full z-50">
-      <div>
+      <div className='container mx-auto'>
         <div className="flex justify-between md:p-2 items-center">
           <div className="w-1/12  hidden md:block">
             <Image

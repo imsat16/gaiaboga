@@ -6,10 +6,6 @@ module.exports = {
   theme: {
     extend: {
     },
-    // colors:{
-    //   'white':'#f2f2f2',
-    //   'defaultColor':'#986826',
-    // },
   },
   variants: {
     extend: {
