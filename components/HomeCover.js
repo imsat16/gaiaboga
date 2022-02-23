@@ -17,10 +17,10 @@ export default function HomeCover () {
       </div>
       <div className="text-white uppercase font-medium">
         <div className="flex flex-col h-screen justify-center items-center ">
-          <p className="md:text-8xl text-5xl text-center italic">
+          <p className="md:text-6xl text-5xl text-center italic">
             &quot;gaiaboga&quot;
           </p>
-          <p className=" md:text-xl text-sm md:w-1/3 w-9/12 text-center font-normal p-5">
+          <p className=" md:text-xl text-sm md:w-2/5 w-9/12 text-center font-normal p-5">
             Bumbu Rempah Nusantara Hidangkan Rasa Bergelora Untuk Tuan dan Nyonya
           </p>
           <div className="grid md:grid-cols-2 gap-3">
