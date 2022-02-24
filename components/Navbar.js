@@ -5,7 +5,7 @@ import {PrimaryLogo} from './imageComp';
 
 function Navbar () {
   return (
-    <div className="bg-white uppercase fixed text-defaultColor font-medium shadow border-1 w-full z-50">
+    <div className="bg-white uppercase text-defaultColor font-medium shadow border-1 w-full z-50">
       <div className='container mx-auto'>
         <div className="flex justify-between md:p-2 items-center">
           <div className="w-1/12  hidden md:block">
@@ -22,9 +22,6 @@ function Navbar () {
             </Link>
             <Link href={'/product'}>
               <a className="px-2 hover:font-bold">Produk</a>
-            </Link>
-            <Link href={'/detailproduct'}>
-              <a className="px-2 hover:font-bold">Detail Produk</a>
             </Link>
             <Link href={'/about'}>
               <a className="px-2 hover:font-bold">Tentang kami</a>
