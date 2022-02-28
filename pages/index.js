@@ -3,7 +3,7 @@ import styles from '../styles/Home.module.css';
 import Navbar from '../components/Navbar';
 import HomeCover from '../components/HomeCover';
 import Image from 'next/image';
-import {BgProduct} from '../components/imageComp';
+import {BgProduct, SqLogo} from '../components/imageComp';
 import Footer from '../components/Footer';
 
 export default function Home () {
@@ -34,7 +34,7 @@ export default function Home () {
         </div>
       </div>
       {/* our product */}
-      <div className=" bg-yellow-800 md:w-full md:h-screen flex flex-col justify-center items-center md:px-32 p-16">
+      <div className=" bg-yellow-700 md:w-full md:h-screen flex flex-col justify-center items-center md:px-32 p-16">
         <div className="bg-white grid md:grid-cols-2 items-center">
           <div className="flex flex-col justify-center items-center ">
             <Image className=" " alt="bgproduct" src={BgProduct} />
@@ -58,7 +58,7 @@ export default function Home () {
                   Sobaso
                 </li>
               </ul>
-              <button className="uppercase bg-yellow-800 p-2 rounded-md">
+              <button className="uppercase bg-yellow-700 text-white font-semibold p-2 rounded-md">
                 lihat Produk
               </button>
             </div>
@@ -79,29 +79,31 @@ export default function Home () {
         <div className=" uppercase grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-full">
           <div className=" grid grid-rows-1 gap-4">
             <div className="flex items-center justify-center flex-col">
-              <div className=" p-3 w-24 h-24 md:w-48 md:h-48 lg:w-24 lg:h-24 hover:bg-yellow-700 shadow-2xl text-yellow-700 hover:text-white transition hover:duration-300 hover:scale-110 ease-in-out text-center border-4 border-yellow-700 rounded-full flex flex-col justify-center items-center">
+              <div className=" p-3 w-24 h-24 hover:bg-yellow-700 shadow-2xl text-yellow-700 hover:text-white transition hover:duration-300 hover:scale-110 ease-in-out text-center border-4 border-yellow-700 rounded-full flex flex-col justify-center items-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-8 w-8 md:h-16 md:w-16 lg:h-8"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
+                  className="h-7 w-7"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
                 >
                   <path
-                    fillRule="evenodd"
-                    d="M7 2a2 2 0 00-2 2v12a2 2 0 002 2h6a2 2 0 002-2V4a2 2 0 00-2-2H7zm3 14a1 1 0 100-2 1 1 0 000 2z"
-                    clipRule="evenodd"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"
                   />
                 </svg>
               </div>
             </div>
             <div className="font-semibold text-lg">
-              TELP (+62)838-2009-0369
+              pilih product
             </div>
           </div>
 
           <div className=" grid grid-rows-1 gap-4">
             <div className="flex items-center justify-center flex-col">
-              <div className=" p-3 w-24 h-24 md:w-48 md:h-48 lg:w-24 lg:h-24 hover:bg-yellow-700 shadow-2xl text-yellow-700 hover:text-white transition hover:duration-300 hover:scale-110 ease-in-out text-center border-4 border-yellow-700 rounded-full flex flex-col justify-center items-center">
+              <div className=" p-3 w-24 h-24 hover:bg-yellow-700 shadow-2xl text-yellow-700 hover:text-white transition hover:duration-300 hover:scale-110 ease-in-out text-center border-4 border-yellow-700 rounded-full flex flex-col justify-center items-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-7 w-7 md:h-16 md:w-16 lg:h-8"
@@ -119,7 +121,7 @@ export default function Home () {
 
           <div className=" grid grid-rows-1 gap-4">
             <div className="flex items-center justify-center flex-col">
-              <div className=" p-3 w-24 h-24 md:w-48 md:h-48 lg:w-24 lg:h-24 hover:bg-yellow-700 shadow-2xl text-yellow-700 hover:text-white transition hover:duration-300 hover:scale-110 ease-in-out text-center border-4 border-yellow-700 rounded-full flex flex-col justify-center items-center">
+              <div className=" p-3 w-24 h-24 hover:bg-yellow-700 shadow-2xl text-yellow-700 hover:text-white transition hover:duration-300 hover:scale-110 ease-in-out text-center border-4 border-yellow-700 rounded-full flex flex-col justify-center items-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-7 w-7 md:h-16 md:w-16 lg:h-8"
@@ -142,7 +144,7 @@ export default function Home () {
 
           <div className=" grid grid-rows-1 gap-4">
             <div className="flex items-center justify-center flex-col">
-              <div className=" p-3 w-24 h-24 md:w-48 md:h-48 lg:w-24 lg:h-24 hover:bg-yellow-700 shadow-2xl text-yellow-700 hover:text-white transition hover:duration-300 hover:scale-110 ease-in-out text-center border-4 border-yellow-700 rounded-full flex flex-col justify-center items-center">
+              <div className=" p-3 w-24 h-24 hover:bg-yellow-700 shadow-2xl text-yellow-700 hover:text-white transition hover:duration-300 hover:scale-110 ease-in-out text-center border-4 border-yellow-700 rounded-full flex flex-col justify-center items-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-7 w-7 md:h-16 md:w-16 lg:h-8"
@@ -161,15 +163,38 @@ export default function Home () {
         </div>
       </div>
       {/* Desc singkat */}
-      <div className="bg-yellow-800 text-white text-center h-screen">
-        <div className="grid grid-cols-2 container mx-auto h-full">
-          <div className='grid grid-cols-2'>
-            <div>asdd1</div>
-            <div>asdd2</div>
-            <div>asdd3</div>
-            <div className='bg-red-400'>asdd4</div>
+      <div className="bg-yellow-700 text-white text-center h-screen">
+        <div className="grid grid-cols-3 container mx-auto h-full p-5 gap-4">
+          <div className="grid grid-cols-2 col-span-2 gap-x-20 content-evenly text-left">
+            <div className="grid gap-2 content-start">
+              <div className="underline text-4xl font-bold">01</div>
+              <div className=' font-semibold text-2xl'>
+                Perusahaan yang dioperasikan dengan azas kekeluargaan diantara karyawannya
+              </div>
+            </div>
+            <div className="grid gap-2 content-start">
+              <div className="underline text-4xl font-bold">02</div>
+              <div className=' font-semibold text-2xl'>
+                Memiliki manajemen yang berpengalaman di bidangnya
+              </div>
+            </div>
+            <div className="grid gap-2 content-start">
+              <div className="underline text-4xl font-bold">03</div>
+              <div className=' font-semibold text-2xl'>
+                Memiliki visi untuk menjadi produsen bumbu yang berstandar GMP (Good Manufacturing Process), dan efisien
+              </div>
+            </div>
+            <div className="grid gap-2 content-start">
+              <div className="underline text-4xl font-bold">04</div>
+              <div className=' font-semibold text-2xl'>
+                Cara kerja yang modern beriringan dengan perkembangan zaman
+              </div>
+            </div>
+
           </div>
-          <div className='flex items-center justify-center'>asd</div>
+          <div className="grid content-center ">
+            <Image src={SqLogo} alt='Gaiaboga Logo' className='bg-white rounded-full'/>
+          </div>
         </div>
       </div>
       <Footer />

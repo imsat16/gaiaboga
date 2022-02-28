@@ -23,14 +23,9 @@ export default function HomeCover () {
           <p className=" md:text-xl text-sm md:w-2/5 w-9/12 text-center font-normal p-5">
             Bumbu Rempah Nusantara Hidangkan Rasa Bergelora Untuk Tuan dan Nyonya
           </p>
-          <div className="grid md:grid-cols-2 gap-3">
             <button className="border-yellow-800 border-2 hover:border-white bg-yellow-800 hover:bg-opacity-100 transition duration-300 py-3 px-6 rounded-full">
               Tentang kami
             </button>
-            <button className="border-yellow-800 border-2 hover:border-white bg-yellow-800 bg-opacity-50 hover:bg-opacity-100 transition duration-300 py-3 px-6 rounded-full">
-              Tentang kami
-            </button>
-          </div>
         </div>
       </div>
     </div>
