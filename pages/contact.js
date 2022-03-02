@@ -1,6 +1,9 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import Image from "next/image";
+import { LazadaLogo, ShopeeLogo, TokpedLogo } from "../components/imageComp";
+import Link from "next/link";
 
 const contact = () => {
   return (
@@ -11,10 +14,10 @@ const contact = () => {
         Kontak
       </div>
       {/* <div className=' container mx-auto'> */}
-      <div className="grid grid-cols-4 gap-4 container mx-auto px-8 h-screen content-center">
+      <div className="grid md:grid-cols-4  gap-4 container mx-auto px-8 h-screen content-center">
         <div className="grid col-span-1">
           <div>
-            <div className="pb-6 pt-6 text-5xl font-semibold">
+            <div className="pb-6 pt-6 md:text-5xl text-4xl font-semibold">
               Informasi Alamat
             </div>
             <div className=" ">
@@ -78,7 +81,38 @@ const contact = () => {
           </button>
         </div>
       </div>
-      {/* </div> */}
+      <div className="md:flex justify-evenly grid mx-auto gap-8 bg-gray-200 p-12">
+        <div className="grid justify-items-center gap-2">
+          <div className="w-1/2">
+            <Link href={"https://shopee.co.id/gaiabogamaishanusajawa"}>
+              <a>
+                <Image alt="" src={ShopeeLogo} />
+              </a>
+            </Link>
+          </div>
+          <div className="font-semibold text-xl md:text-lg">shopee.co.id/gaiabogamaishanusajawa</div>
+        </div>
+        <div className="grid justify-items-center gap-2">
+          <div className="w-1/2">
+            <Link href={"https://www.tokopedia.com/gaiaboga"}>
+              <a>
+                <Image alt="" src={TokpedLogo} />
+              </a>
+            </Link>
+          </div>
+          <div className="font-semibold text-xl md:text-lg">tokopedia.com/gaiaboga</div>
+        </div>
+        <div className="grid justify-items-center gap-2">
+          <div className="w-1/2">
+            <Link href={"https://www.lazada.co.id/shop/gaiaboga"}>
+              <a>
+                <Image alt="" src={LazadaLogo} />
+              </a>
+            </Link>
+          </div>
+          <div className="font-semibold text-xl md:text-lg">lazada.co.id/gaiaboga</div>
+        </div>
+      </div>
       <Footer />
     </div>
   );
