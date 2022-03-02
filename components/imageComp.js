@@ -2,11 +2,13 @@ import PrimaryLogo from '../public/img/gabogLogo.png'
 import Logo from '../public/img/gabog-jl.png'
 import BgProduct from '../public/img/BgProduct.jpg'
 import SqLogo from '../public/img/sqgabogLogo.png'
+import OurProduct from '../public/img/ourprod.jpg'
 
 export{
     PrimaryLogo,
     Logo,
     SqLogo,
-    BgProduct
+    BgProduct,
+    OurProduct
 }
 

@@ -3,7 +3,7 @@ import styles from '../styles/Home.module.css';
 import Navbar from '../components/Navbar';
 import HomeCover from '../components/HomeCover';
 import Image from 'next/image';
-import {BgProduct, SqLogo} from '../components/imageComp';
+import {BgProduct, OurProduct, SqLogo} from '../components/imageComp';
 import Footer from '../components/Footer';
 
 export default function Home () {
@@ -37,7 +37,7 @@ export default function Home () {
       <div className=" bg-yellow-700 md:w-full md:h-screen flex flex-col justify-center items-center md:px-32 p-16">
         <div className="bg-white grid md:grid-cols-2 items-center">
           <div className="flex flex-col justify-center items-center ">
-            <Image className=" " alt="bgproduct" src={BgProduct} />
+            <Image className=" " alt="our product" src={OurProduct} />
           </div>
           <div className="md:p-16">
             <div className="grid grid-rows-1 gap-3">
@@ -47,15 +47,27 @@ export default function Home () {
               <p className="text-lg">
                 Gaiaboga saat ini memiliki 3 kategori produk yang sudah ditawarkan ke seluruh masyarakat
               </p>
-              <ul className="list-disc">
-                <li>
-                  Bawang Goreng
+              <div>
+                
+              </div>
+              <ul className="list-disc uppercase">
+                <li className='flex items-center'>
+                  <div className=' w-2 h-2 bg-yellow-600 opacity-70 rounded-full'/>
+                  <p className='px-2 py-4 font-semibold text-lg'>
+                    Bawang Goreng
+                  </p>
                 </li>
-                <li>
-                  Aneka Saus
+                <li className='flex items-center'>
+                  <div className=' w-2 h-2 bg-yellow-600 opacity-70 rounded-full'/>
+                  <p className='px-2 py-4 font-semibold text-lg'>
+                    Aneka saus
+                  </p>
                 </li>
-                <li>
-                  Sobaso
+                <li className='flex items-center'>
+                  <div className=' w-2 h-2 bg-yellow-600 opacity-70 rounded-full'/>
+                  <p className='px-2 py-4 font-semibold text-lg'>
+                    sobaso
+                  </p>
                 </li>
               </ul>
               <button className="uppercase bg-yellow-700 text-white font-semibold p-2 rounded-md">
